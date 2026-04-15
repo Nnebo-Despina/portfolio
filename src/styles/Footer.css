@@ -1,0 +1,230 @@
+.footer{
+    width: 100%;
+    height: fit-content;
+    padding: 5vh 5% 0 5%;
+    background-color: var(--tertiaryColor);
+}
+.footer-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5vh;
+    margin-bottom: 3vh;
+    border-bottom: 1px solid #4a4e696b;
+}
+.footer-header-title{
+    font-size: 55px;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+.footer-header-title span{
+    color: var(--secondaryColor);
+    font-family: "Parisienne";
+
+}
+.footer-header button{
+    padding: 5px 5px 5px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    font-size: 13px;
+    background-color: var(--primaryColor);
+}
+.footer-header button p{
+    font-size: 17px;
+    color: white;
+}
+.footer-header button div{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: var(--primaryColor);
+    font-size: 20px;
+}
+.footer-logo-div{
+    height: 4vh;
+    width: 4vh;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+}
+.footer-body {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 5vh;
+}
+.footer-body-one, .footer-body-two{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-body-one{
+    width: 90%;
+}
+.footer-body-one-subh{
+    font-size: 14px;
+    color: var(--accentOne);
+    line-height: 1.6;
+    max-width: 500px;
+}
+.footer-body-two {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* 🔥 spacing between links */
+}
+
+.footer-body-two-header {
+    margin-bottom: 5px;
+}
+.footer-body-two-links a, .footer-body-two-links {
+    color: var(--primaryColor);
+    font-size: 15px;
+    transition: 0.3s ease-in all;
+}
+.footer-body-two-links {
+    line-height: 1.8;
+}
+
+.footer-body-two-links a {
+    display: inline-block;
+}
+.footer-body-two-links a:hover{
+    color: var(--secondaryColor);
+}
+.footer-body-two button {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 21px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* WhatsApp */
+.footer-body-two button:nth-of-type(1) {
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+}
+
+/* Telegram */
+.footer-body-two button:nth-of-type(2) {
+    background: linear-gradient(135deg, #0088CC, #006fa6);
+}
+
+/* Hover effect */
+.footer-body-two button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.s1-f-social{
+    padding: 7px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    color: var(--tertiaryColor);
+    border-radius: 50%;
+}
+.footer-end{
+    width: 100%;
+    padding: 2vh;
+    text-align: center;
+    background-color: var(--primaryColor);
+    color: white;
+}
+@media (max-width: 1024px) {
+    .footer-header-title {
+        font-size: 40px;
+    }
+
+    .footer-body-one {
+        width: 100%;
+    }
+
+    .footer-body-two {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-body {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Put nav + contact side by side even on mobile */
+    .footer-body-two {
+        width: 100%;
+    }
+
+    /* Wrap nav + contact into 2 columns */
+    .footer-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Create a row for nav + contact */
+    .footer-body-two:nth-child(2),
+    .footer-body-two:nth-child(3) {
+        display: inline-flex;
+        width: 48%;
+    }
+
+    /* Put them on same row */
+    .footer-body {
+        align-items: stretch;
+    }
+
+    .footer-body-two:nth-child(2),
+    .footer-body-two:nth-child(3) {
+        align-self: flex-start;
+    }
+
+    /* Buttons full width */
+    .footer-body-two button {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-header-title {
+        font-size: 24px;
+    }
+
+    .footer-body-two-header {
+        font-size: 18px;
+    }
+
+    .footer-body-two-links {
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        font-size: 18px;
+    }
+
+    .footer-logo-div {
+        height: 30px;
+        width: 30px;
+    }
+}
+

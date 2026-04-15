@@ -1,0 +1,218 @@
+.s1-project-ui{
+    width: 100%;
+    height: fit-content;
+    padding: 11vh 5% 5vh 5%;
+    background-color: white;
+}
+.s1-project-ui-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    color: var(--primaryColor);
+}
+.s1-project-ui-header p:nth-of-type(1){
+    font-size: 50px;
+    font-weight: 500;
+}
+.s1-project-ui-header p:nth-of-type(2){
+    width: 40%;
+    font-size: 17px;
+}
+.s1-project-ui-project-ui-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.s1-project-ui-one{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0px 1px 1px 1px black; */
+}
+.s1-project-ui-image{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+}
+
+.s1-project-ui-image button{
+    padding: 5px 5px 5px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+}
+.s1-project-ui-image button p{
+    font-size: 17px;
+    color: var(--primaryColor);
+}
+.s1-header-desc-svg{
+    padding: 10px;
+    background-color: var(--primaryColor);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-ui-desc-tag{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.project-ui-desc-tag div{
+    padding: 7px 15px;
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 20px;
+}
+.s1-project-ui-desc{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(4px);
+    border-radius: 0 0 10px 10px;
+    
+}
+.s1-project-ui-desc p{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px){
+
+    .s1-project-ui{
+        padding: 10vh 5% 5vh 5%;
+    }
+
+    .s1-project-ui-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .s1-project-ui-header p:nth-of-type(1){
+        font-size: 40px;
+    }
+
+    .s1-project-ui-header p:nth-of-type(2){
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .s1-project-ui-image{
+        height: 65vh;
+    }
+
+    .s1-project-ui-desc p{
+        font-size: 32px;
+    }
+
+    .project-ui-desc-tag{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .project-ui-desc-tag div{
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .s1-project-ui{
+        padding: 9vh 5% 5vh 5%;
+    }
+
+    .s1-project-ui-header p:nth-of-type(1){
+        font-size: 30px;
+    }
+
+    .s1-project-ui-header p:nth-of-type(2){
+        font-size: 14px;
+    }
+
+    .s1-project-ui-image{
+        height: 55vh;
+    }
+
+    .s1-project-ui-desc{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .s1-project-ui-desc p{
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .s1-project-ui-image button{
+        padding: 5px 5px 5px 12px;
+    }
+
+    .s1-project-ui-image button p{
+        font-size: 14px;
+    }
+
+    .s1-header-desc-svg{
+        padding: 8px;
+    }
+
+    .project-ui-desc-tag{
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .project-ui-desc-tag div{
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .s1-project-ui-header p:nth-of-type(1){
+        font-size: 25px;
+    }
+
+    .s1-project-ui-image{
+        height: 45vh;
+        border-radius: 8px;
+    }
+
+    .s1-project-ui-desc{
+        padding: 15px;
+    }
+
+    .s1-project-ui-desc p{
+        font-size: 20px;
+    }
+
+    .project-ui-desc-tag div{
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+

@@ -1,0 +1,125 @@
+.s1-contact{
+    width: 100%;
+    height: 100vh;
+    padding: 12vh 5%;
+    color: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+}
+.s1-contact-dets{
+    width: 35%;
+}
+.s1-contact-dets-header{
+    font-size: 50px;
+    font-weight: 500;
+}
+.s1-contact-dets-header span{
+    color: var(--secondaryColor);
+}
+.s1-contact-dets-desc{
+    width: 95%;
+}
+.s1-contact-info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.s1-contact-info div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: var(--tertiaryColor);
+    font-size: 16px;
+    border-radius: 50%;
+}
+.s1-contact-form{
+    width: 60%;
+}
+.s1-contact-form span{
+    color: red;
+}
+.s1-contact-form label{
+    font-weight: 500;
+}
+.s1-contact-form input{
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    margin-top: 5px;
+    width: 100%;
+    height: fit-content;
+}
+.s1-contact-form select{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: fit-content;
+}
+.s1-contact-form-r1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+.s1-contact-form-r1-div{
+    width: 100%;
+}
+.select-opt{
+    margin-top: 5px;
+    padding: 0 10px 0 0 ;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+.s1-contact-form select option:nth-child(1){
+    color: gray;
+}
+.s1-contact-form textarea{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #f0f0f0;
+    margin-top: 5px;
+    width: 100%;
+    height: fit-content;
+    resize: none;
+    margin-bottom: 20px;
+}
+.s1-contact-form button{
+    padding: 5px 5px 5px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background-color: var(--primaryColor);
+}
+.s1-contact-form button p{
+    font-size: 17px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .s1-contact{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .s1-contact-dets{
+        width: 100%;
+    }
+    .s1-contact-form{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}

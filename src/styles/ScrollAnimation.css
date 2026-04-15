@@ -1,0 +1,101 @@
+.home-scroll{ 
+    white-space: nowrap; 
+    overflow: hidden; 
+    position: relative;
+} 
+.scroll-animation{ 
+    background-color: var(--secondaryColor); 
+    color: white; 
+    padding: 3vh 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    width: 200%; 
+} 
+.scroll-cont-divs{ 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%; 
+    animation: 10s slide infinite linear; 
+} 
+.scroll-cont-divs div{ 
+    height: 2vh; 
+    width: 2vh; 
+    background-color: white; 
+    border-radius: 50%; 
+}
+
+.home-scroll::before,
+.home-scroll::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 2;
+}
+
+.home-scroll::before {
+    left: 0;
+    background: linear-gradient(to right, var(--secondaryColor), transparent);
+}
+
+.home-scroll::after {
+    right: 0;
+    background: linear-gradient(to left, var(--secondaryColor), transparent);
+}
+
+@media (max-width: 1024px) {
+    .scroll-animation {
+        animation-duration: 20s; /* slower = smoother on mobile */
+        padding: 1vh 5%; 
+
+    }
+    .scroll-cont-divs {
+        gap: 30px;
+        padding: 16px 30px;
+    }
+
+    .scroll-cont-divs p {
+        font-size: 14px;
+    }
+
+    .scroll-cont-divs div {
+        height: 8px;
+        width: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-animation {
+        animation-duration: 20s; /* slower = smoother on mobile */
+        padding: 1vh 5%; 
+
+    }
+
+    .scroll-cont-divs {
+        gap: 20px;
+        padding: 12px 20px;
+    }
+
+    .scroll-cont-divs p {
+        font-size: 13px;
+    }
+
+    .scroll-cont-divs div {
+        height: 6px;
+        width: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .scroll-cont-divs {
+        gap: 15px;
+        padding: 10px 15px;
+    }
+
+    .scroll-cont-divs p {
+        font-size: 12px;
+    }
+}
