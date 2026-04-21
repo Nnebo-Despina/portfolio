@@ -5,7 +5,7 @@ import { MdMail } from 'react-icons/md'
 import { BiPhone } from 'react-icons/bi'
 import { BsBehance, BsTwitterX, BsX } from 'react-icons/bs'
 import { FaArrowRight } from 'react-icons/fa'
-import database from '/portfolioData/portfolio-db.json'
+import database from '../../public/portfolioData/portfolio-db.json'
 import Select from "react-select";
 
 
