@@ -30,21 +30,38 @@ const Home = () => {
   }
 
     useEffect(() => {
-    const section = document.querySelector(".s2-home");
+        const section = document.querySelector(".s2-home");
 
-    const observer = new IntersectionObserver(
-        ([entry]) => {
-        if (entry.isIntersecting) {
-            section.classList.add("show");
-        }
-        },
-        { threshold: 0.3 }
-    );
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+            if (entry.isIntersecting) {
+                section.classList.add("show");
+            }
+            },
+            { threshold: 0.3 }
+        );
 
-    if (section) observer.observe(section);
+        if (section) observer.observe(section);
 
-    return () => observer.disconnect();
+        return () => observer.disconnect();
     }, []);
+
+    useEffect(() => {
+        const ctaSection = document.querySelector(".cta-home");
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+            if (entry.isIntersecting) {
+                ctaSection.classList.add("cta-show");
+            }
+            },
+            { threshold: 0.3 }
+        );
+
+        if (ctaSection) observer.observe(ctaSection);
+
+        return () => observer.disconnect();
+        }, []);
   
     return (
         <>
@@ -192,102 +209,87 @@ const Home = () => {
                 <div className="s5-home-review-cont">
                     <div className="s5-home-review-r1">
                         <div className="s5-home-review-r1-cont">
-                            {testimonal.map((r) => (
-                                    r.id <= 3 ?
-                                        <div className="s5-home-review">
-                                            {starReview(r.ratings)}
-                                            <br />
-                                            <p className="s5-home-review-description">{r.review}</p>
-                                            <br />
-                                            <div className="s5-home-review-name-cont">
-                                                <div className="s5-home-review-profile">
-                                                    <img src={r.url} alt="" />
-                                                    <div className="s5-home-review-name">
-                                                        <p>{r.name}</p>
-                                                        <i>{r.companyPosition}, {r.company}</i>
-                                                    </div>
-                                                </div>
-                                                <LuQuote size='60'/>
+                            {testimonal.filter(r => r.id <= 3).map((r) => (
+                                <div className="s5-home-review" key={r.id}>
+                                    {starReview(r.ratings)}
+                                    <br />
+                                    <p className="s5-home-review-description">{r.review}</p>
+                                    <br />
+                                    <div className="s5-home-review-name-cont">
+                                        <div className="s5-home-review-profile">
+                                            <img src={r.url} alt={`${r.name} profile`} />
+                                            <div className="s5-home-review-name">
+                                                <p>{r.name}</p>
+                                                <i>{r.companyPosition}, {r.company}</i>
                                             </div>
                                         </div>
-                                    :
-                                        <></>
-                            ))
-                            }
+                                        <LuQuote size='60'/>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                         <div className="s5-home-review-r1-cont">
-                            {testimonal.map((r) => (
-                                    r.id <= 3 ?
-                                        <div className="s5-home-review">
-                                            {starReview(r.ratings)}
-                                            <br />
-                                            <p className="s5-home-review-description">{r.review}</p>
-                                            <br />
-                                            <div className="s5-home-review-name-cont">
-                                                <div className="s5-home-review-profile">
-                                                    <img src={r.url} alt="" />
-                                                    <div className="s5-home-review-name">
-                                                        <p>{r.name}</p>
-                                                        <i>{r.companyPosition}, {r.company}</i>
-                                                    </div>
-                                                </div>
-                                                <LuQuote size='60'/>
+                            {testimonal.filter(r => r.id <= 3).map((r) => (
+                                <div className="s5-home-review" key={`dup-${r.id}`}>
+                                    {starReview(r.ratings)}
+                                    <br />
+                                    <p className="s5-home-review-description">{r.review}</p>
+                                    <br />
+                                    <div className="s5-home-review-name-cont">
+                                        <div className="s5-home-review-profile">
+                                            <img src={r.url} alt={`${r.name} profile`} />
+                                            <div className="s5-home-review-name">
+                                                <p>{r.name}</p>
+                                                <i>{r.companyPosition}, {r.company}</i>
                                             </div>
                                         </div>
-                                    :
-                                        <></>
-                            ))
-                            }
+                                        <LuQuote size='60'/>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
+
                     <div className="s5-home-review-r2">
                         <div className="s5-home-review-r2-cont">
-                            {testimonal.map((r) => (
-                                    (r.id > 3 && r.id <= 6) ?
-                                        <div className="s5-home-review">
-                                            {starReview(r.ratings)}
-                                            <br />
-                                            <p className="s5-home-review-description">{r.review}</p>
-                                            <br />
-                                            <div className="s5-home-review-name-cont">
-                                                <div className="s5-home-review-profile">
-                                                    <img src={r.url} alt="" />
-                                                    <div className="s5-home-review-name">
-                                                        <p>{r.name}</p>
-                                                        <i>{r.companyPosition}, {r.company}</i>
-                                                    </div>
-                                                </div>
-                                                <LuQuote size='60'/>
+                            {testimonal.filter(r => r.id > 3 && r.id <= 6).map((r) => (
+                                <div className="s5-home-review" key={r.id}>
+                                    {starReview(r.ratings)}
+                                    <br />
+                                    <p className="s5-home-review-description">{r.review}</p>
+                                    <br />
+                                    <div className="s5-home-review-name-cont">
+                                        <div className="s5-home-review-profile">
+                                            <img src={r.url} alt={`${r.name} profile`} />
+                                            <div className="s5-home-review-name">
+                                                <p>{r.name}</p>
+                                                <i>{r.companyPosition}, {r.company}</i>
                                             </div>
                                         </div>
-                                    :
-                                        <></>
-                            ))
-                            }
+                                        <LuQuote size='60'/>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                         <div className="s5-home-review-r2-cont">
-                            {testimonal.map((r) => (
-                                    (r.id > 3 && r.id <= 6) ?
-                                        <div className="s5-home-review">
-                                            {starReview(r.ratings)}
-                                            <br />
-                                            <p className="s5-home-review-description">{r.review}</p>
-                                            <br />
-                                            <div className="s5-home-review-name-cont">
-                                                <div className="s5-home-review-profile">
-                                                    <img src={r.url} alt="" />
-                                                    <div className="s5-home-review-name">
-                                                        <p>{r.name}</p>
-                                                        <i>{r.companyPosition}, {r.company}</i>
-                                                    </div>
-                                                </div>
-                                                <LuQuote size='60'/>
+                            {testimonal.filter(r => r.id > 3 && r.id <= 6).map((r) => (
+                                <div className="s5-home-review" key={`dup-${r.id}`}>
+                                    {starReview(r.ratings)}
+                                    <br />
+                                    <p className="s5-home-review-description">{r.review}</p>
+                                    <br />
+                                    <div className="s5-home-review-name-cont">
+                                        <div className="s5-home-review-profile">
+                                            <img src={r.url} alt={`${r.name} profile`} />
+                                            <div className="s5-home-review-name">
+                                                <p>{r.name}</p>
+                                                <i>{r.companyPosition}, {r.company}</i>
                                             </div>
                                         </div>
-                                    :
-                                        <></>
-                            ))
-                            }
+                                        <LuQuote size='60'/>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -296,9 +298,14 @@ const Home = () => {
             <section className='cta-home'>
                 <div className="cta-text">
                     <p className="cta-text-title">Ready To Get Your Dream Website?</p>
-                    <p className="cta-text-stitle">
-                    Whether you need a website, a mobile app design, or a complete UI system, I’m ready to help bring your vision to life. 
-                    Let’s build something modern, functional, and designed to impress your users from the very first click.
+                    <p className="cta-text-stitle reveal-text">
+                    {"Whether you need a website, a mobile app design, or a complete UI system, I’m ready to help bring your vision to life. Let’s build something modern, functional, and designed to impress your users from the very first click."
+                        .split(" ")
+                        .map((word, i) => (
+                        <span key={i} style={{ transitionDelay: `${i * 0.03}s` }}>
+                            {word}&nbsp;
+                        </span>
+                        ))}
                     </p>
 
                     <Link to="contact"><button><p>Contact Me</p><div><FaArrowRight /></div></button></Link>

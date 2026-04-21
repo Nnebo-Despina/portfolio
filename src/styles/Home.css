@@ -726,7 +726,13 @@
 .s5-home-desc{
     width: 45%;
 }
-.s5-home-review-cont{
+
+/* Define a variable for the gap so the animation calculates it dynamically */
+:root {
+    --review-gap: 30px;
+}
+
+.s5-home-review-cont {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -734,83 +740,92 @@
     height: fit-content;
     align-items: center;
     white-space: normal;
-    overflow: hidden;
-}
-.s5-home-review-r1, .s5-home-review-r2{
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
-    width: 100%;
-    gap: 30px;
-}
-.s5-home-review-r1-cont{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    animation: 25s slide infinite linear;
-    gap: 30px;
-}
-.s5-home-review-r2-cont{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    animation: 25s slideOpposite infinite linear;
-    gap: 30px;
+    overflow: hidden; /* Important: Hides the overflow for the marquee */
 }
 
-.s5-home-review{
+.s5-home-review-r1, .s5-home-review-r2 {
+    display: flex;
+    padding: 2vh 0;
+    width: 100%;
+    gap: var(--review-gap);
+    flex-wrap: nowrap; /* Forces tracks to stay on one line */
+}
+
+/* Base track styles */
+.s5-home-review-r1-cont, .s5-home-review-r2-cont {
+    display: flex;
+    align-items: center;
+    /* max-content ensures it doesn't squish based on screen size */
+    width: max-content; 
+    flex-shrink: 0; 
+    gap: var(--review-gap);
+}
+
+.s5-home-review-r1-cont {
+    animation: slide 25s infinite linear;
+}
+
+.s5-home-review-r2-cont {
+    animation: slideOpposite 25s infinite linear;
+}
+
+.s5-home-review {
     width: 380px;
-    max-width: 100%;
-    min-height: 220px; /* 🔥 flexible height */
+    max-width: 85vw; /* Prevents card from bleeding off tiny mobile screens */
+    min-height: 220px;
     padding: 30px 20px;
     background-color: var(--secondaryColor);
     border-radius: 20px;
     color: var(--tertiaryColor);
     font-size: 14px;
-}
-.s5-home-review-star{
-    display: flex;
-    gap: 5px;
-}
-.s5-home-review-name-cont{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: end;
-}
-.s5-home-review-name-cont svg{
-    opacity: 0.2;
-}
-.s5-home-review-profile{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.s5-home-review-profile img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+    /* Optional: prevents cards from shrinking if flexbox tries to force it */
+    flex-shrink: 0; 
 }
 
-@media (max-width: 1024px) {
-    .s5-home-header {
-        font-size: 32px;
-        width: 45%;
-    }
-
-    .s5-home-desc {
-        width: 50%;
-        font-size: 14px;
-    }
-
-    .s5-home-review {
-        width: 320px;
-    }
+/* ... keep your existing star, profile, and name CSS here ... */
+.s5-home-review-star { 
+    display: flex; 
+    gap: 5px; 
+}
+.s5-home-review-name-cont { 
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: end; 
+}
+.s5-home-review-name-cont svg { 
+    opacity: 0.2; 
+}
+.s5-home-review-profile { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+}
+.s5-home-review-profile img { 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
 }
 
+
+/* =========================================
+   KEYFRAMES 
+   Translates exactly 100% of the track + 1 gap
+========================================= */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - var(--review-gap))); }
+}
+
+@keyframes slideOpposite {
+    0% { transform: translateX(calc(-100% - var(--review-gap))); }
+    100% { transform: translateX(0); }
+}
+
+/* =========================================
+   RESPONSIVENESS (Media Queries)
+========================================= */
 @media (max-width: 768px) {
     .s5-home {
         padding: 40px 20px;
@@ -834,30 +849,38 @@
         font-size: 14px;
     }
 
-    /* 🔥 disable scrolling chaos */
-    .s5-home-review-r1-cont,
-    .s5-home-review-r2-cont {
-        animation: none;
-        flex-direction: column;
-        align-items: center;
+    :root {
+        --review-gap: 15px; /* Shrinks gaps on mobile, keyframes adapt automatically */
+    }
+    
+    .s5-home-review {
+        width: 300px; /* Slightly narrower cards */
+        padding: 20px 15px;
+        min-height: 200px;
     }
 
-    .s5-home-review-r1,
-    .s5-home-review-r2 {
-        flex-direction: column;
-        gap: 20px;
+    .s5-home-review-profile img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .s5-home-header {
+        font-size: 32px;
+        width: 45%;
+    }
+
+    .s5-home-desc {
+        width: 50%;
+        font-size: 14px;
     }
 
     .s5-home-review {
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .s5-home-review-r1 > div:nth-child(2),
-    .s5-home-review-r2 > div:nth-child(2) {
-        display: none;
+        width: 320px;
     }
 }
+
 
 @media (max-width: 480px) {
     .s5-home-header {
@@ -928,6 +951,31 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* CTA Fade In */
+.cta-home {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s ease;
+}
+
+.cta-home.cta-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Word-by-word smooth reveal */
+.cta-home .reveal-text span {
+  opacity: 0;
+  transform: translateY(10px);
+  display: inline-block;
+  transition: 0.4s ease;
+}
+
+.cta-home.cta-show .reveal-text span {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 1024px) {

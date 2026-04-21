@@ -54,7 +54,7 @@ const Footer = () => {
                 <div className='footer-body-two'>
                     <p className="footer-body-two-header">Contact</p>
                     <p className="footer-body-two-links">+234 813 5744 702</p>
-                    <p className="footer-body-two-links">thiswebsite.com</p>
+                    <a href="https://despina-portfolio.vercel.app"><p className="footer-body-two-links">despina-portfolio.vercel.app</p></a>
                     <p className="footer-body-two-links">despinannebs22@gmail.com</p>
                     <p className="footer-body-two-links">Enugu, Nigeria</p>
                 </div>
