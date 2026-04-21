@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 import '../styles/Projects.css'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
-import database from '/portfolioData/portfolio-db.json'
+import database from '../../public/portfolioData/portfolio-db.json'
 
 
 const Projects = () => {

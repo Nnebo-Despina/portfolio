@@ -6,7 +6,7 @@ import '../styles/Home.css'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { BsStarFill } from 'react-icons/bs'
 import { LuQuote } from 'react-icons/lu'
-import testimonalArray from "/portfolioData/portfolio-db.json" 
+import testimonalArray from "../../public/portfolioData/portfolio-db.json" 
 import { RiStarFill } from 'react-icons/ri'
 import Footer from '../components/Footer'
 import ScrollAnimation from '../components/ScrollAnimation'

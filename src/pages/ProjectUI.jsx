@@ -3,7 +3,7 @@ import '../styles/ProjectUI.css'
 import NavBar from '../components/NavBar'
 import { FaArrowRight } from 'react-icons/fa'
 import Footer from '../components/Footer'
-import database from '/portfolioData/portfolio-db.json'
+import database from '../../public/portfolioData/portfolio-db.json'
 import { Link, useNavigate } from 'react-router-dom'
 
 

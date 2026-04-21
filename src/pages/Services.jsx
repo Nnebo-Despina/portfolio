@@ -5,7 +5,7 @@ import { FaLaptopCode } from 'react-icons/fa'
 import { PiPackage } from 'react-icons/pi'
 import { BiMoney, BiPlus } from 'react-icons/bi'
 import { CiMoneyBill, CiMoneyCheck1 } from 'react-icons/ci'
-import FAQArray from "/portfolioData/portfolio-db.json" 
+import FAQArray from "../../public/portfolioData/portfolio-db.json" 
 import Footer from '../components/Footer'
 import ScrollAnimation from '../components/ScrollAnimation'
 

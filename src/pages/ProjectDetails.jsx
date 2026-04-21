@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/ProjectDetails.css'
 import { useNavigate, useParams } from 'react-router-dom'
-import database from '/portfolioData/portfolio-db.json'
+import database from '../../public/portfolioData/portfolio-db.json'
 
 const ProjectDetails = () => {
     const data = database.projects;
