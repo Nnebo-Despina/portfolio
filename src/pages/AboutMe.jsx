@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import '../styles/AboutMe.css'
 import NavBar from '../components/NavBar'
 import { BiPhone } from 'react-icons/bi'
-import TransparentPic from '../assets/img/IMG_3375-removebg-preview.png'
+import TransparentPic from '/img/IMG_3375-removebg-preview.png'
 import { GoLocation } from 'react-icons/go'
 import { CgMail } from 'react-icons/cg'
 import { BsBehance, BsInstagram, BsTwitterX } from 'react-icons/bs'
@@ -75,11 +75,11 @@ const AboutMe = () => {
             <div className="s2-exp-circle-div">
               <div className="s2-exp-circle"></div>
               <div className="about-line"></div>
-              <p>2025</p>
+              <p>2026</p>
             </div>
             <div className="s2-exp-desc">
-              <p>Front End Development</p>
-              <p>Worked on building responsive interfaces and improving user experience across multiple web applications, focusing on performance, accessibility, and clean design.</p>
+              <p>App Front End Developer ~ Flutter</p>
+              <p>Worked on building responsive interfaces and improving user experience across multiple mobile applications, focusing on performance, accessibility, and clean design.</p>
             </div>
             
           </div>
@@ -91,8 +91,8 @@ const AboutMe = () => {
               <p>2025</p>
             </div>
             <div className="s2-exp-desc">
-              <p>Front End Development</p>
-              <p>Worked on building responsive interfaces and improving user experience across multiple web applications, focusing on performance, accessibility, and clean design.</p>
+              <p>Web Front End Development ~ React</p>
+              <p>Worked on building responsive interfaces and improving user experience across multiple websites & webapps, focusing on performance, accessibility, and clean design.</p>
             </div>
           </div>
           <br />
@@ -102,8 +102,8 @@ const AboutMe = () => {
               <p>2025</p>
             </div>
             <div className="s2-exp-desc">
-              <p>UI/UX Design</p>
-              <p>Worked on building responsive interfaces and improving user experience across multiple web applications, focusing on performance, accessibility, and clean design.</p>
+              <p>UI/UX Design ~ Figma</p>
+              <p>Worked on building responsive interfaces and creating user experience across multiple web & mobile sites and applications, focusing on performance, accessibility, and clean design.</p>
             </div>
           </div>
         </div>
@@ -114,11 +114,11 @@ const AboutMe = () => {
             <div className="s2-edu-circle-div">
               <div className="s2-edu-circle"></div>
               <div className="about-line"></div>
-              <p>2025</p>
+              <p>2026</p>
             </div>
             <div className="s2-edu-desc">
-              <p>Front End Development</p>
-              <p>Studied core principles of web development and UI/UX design, gaining practical skills in building responsive, user-friendly digital products.</p>
+              <p>App Front End Development ~ Flutter</p>
+              <p>Studied core principles of app development and design, gaining practical skills in building responsive, user-friendly digital products.</p>
             </div>
           </div>
           <br />
@@ -126,10 +126,10 @@ const AboutMe = () => {
             <div className="s2-edu-circle-div">
               <div className="s2-edu-circle"></div>
               <div className="about-line"></div>
-              <p>2025</p>
+              <p>2026</p>
             </div>
             <div className="s2-edu-desc">
-              <p>Front End Development</p>
+              <p>Web Front End Development ~ React</p>
               <p>Studied core principles of web development and UI/UX design, gaining practical skills in building responsive, user-friendly digital products.</p>
             </div>
           </div>
@@ -140,8 +140,8 @@ const AboutMe = () => {
               <p>2025</p>
             </div>
             <div className="s2-edu-desc">
-              <p>UI/UX Design</p>
-              <p>Studied core principles of web development and UI/UX design, gaining practical skills in building responsive, user-friendly digital products.</p>
+              <p>UI/UX Design ~ Figma</p>
+              <p>Studied core principles of website & app development and UI/UX design, gaining practical skills in building responsive, user-friendly digital products.</p>
             </div>
           </div>
         </div>

@@ -6,11 +6,21 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     const socials = [
-    'behance.net/despinannebs22',
-    'x.com/callme_despina',
-    'instagram.com/callme_despina',
-    'tiktok.com/callme_despina'
-  ]
+        'behance.net/despinannebs22',
+        'x.com/callme_despina',
+        'instagram.com/callme_despina',
+        'tiktok.com/callme_despina'
+    ]
+  const whatsappNumber = "2348135744702"; // replace with yours
+  const telegramUsername = "smarttech_203"; // replace with yours
+
+  const handleWhatsApp = () => {
+    window.open(`https://wa.me/${whatsappNumber}`, "_blank");
+  };
+
+  const handleTelegram = () => {
+    window.open(`https://t.me/${telegramUsername}`, "_blank");
+  };
   return (
     <>
         <footer className="footer">
@@ -50,8 +60,8 @@ const Footer = () => {
                 </div>
                 <div className='footer-body-two'>
                     <p className="footer-body-two-header">Get To Know More Personally</p>
-                    <button><BsWhatsapp /> Add On Whatsapp</button>
-                    <button><BsTelegram /> Add On Telegram</button>
+                    <button onClick={handleWhatsApp}><BsWhatsapp /> Add On Whatsapp</button>
+                    <button onClick={handleTelegram}><BsTelegram /> Add On Telegram</button>
 
                 </div>
             </div>

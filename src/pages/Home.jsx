@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
-import FirstPic from '../assets/img/IMG_3378.JPG'
-import SecondPic from '../assets/img/IMG_3375.JPG'
+import FirstPic from '/img/IMG_3378.JPG'
+import SecondPic from '/img/IMG_3375.JPG'
 import '../styles/Home.css'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { BsStarFill } from 'react-icons/bs'
@@ -10,9 +10,9 @@ import testimonalArray from "/portfolioData/portfolio-db.json"
 import { RiStarFill } from 'react-icons/ri'
 import Footer from '../components/Footer'
 import ScrollAnimation from '../components/ScrollAnimation'
-import Figma from '../assets/img/Figma.jfif'
-import Sketch from '../assets/img/Sketch.jfif'
-import VSCode from '../assets/img/VSCode.jfif'
+import Figma from '/img/Figma.jfif'
+import Sketch from '/img/Sketch.jfif'
+import VSCode from '/img/VSCode.jfif'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
