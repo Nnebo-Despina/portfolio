@@ -19,6 +19,7 @@
 .s1-details-title{
     font-size: 40px;
     padding-bottom: 20px;
+    text-align: center;
 }
 .s1-details a{
     color: var(--primaryColor);

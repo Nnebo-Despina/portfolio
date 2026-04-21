@@ -311,6 +311,31 @@
     gap: 10px;
 }
 
+/* Section fade in */
+.s2-home {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s ease;
+}
+
+.s2-home.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Word-by-word reveal */
+.reveal-text span {
+  opacity: 0;
+  transform: translateY(10px);
+  display: inline-block;
+  transition: 0.4s ease;
+}
+
+.s2-home.show .reveal-text span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 1024px) {
     .s2-home {
         gap: 30px;
@@ -899,7 +924,7 @@
 .cta-image {
     width: 40%;
     height: 50vh;
-    background-image: url('../assets/img/mockup.png');
+    background-image: url('/img/mockup.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

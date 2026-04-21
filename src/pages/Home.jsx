@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from '../components/NavBar'
 import FirstPic from '/img/IMG_3378.JPG'
 import SecondPic from '/img/IMG_3375.JPG'
@@ -28,6 +28,23 @@ const Home = () => {
             </div>
         );
   }
+
+    useEffect(() => {
+    const section = document.querySelector(".s2-home");
+
+    const observer = new IntersectionObserver(
+        ([entry]) => {
+        if (entry.isIntersecting) {
+            section.classList.add("show");
+        }
+        },
+        { threshold: 0.3 }
+    );
+
+    if (section) observer.observe(section);
+
+    return () => observer.disconnect();
+    }, []);
   
     return (
         <>
@@ -79,10 +96,14 @@ const Home = () => {
                     <div>
                         <p>About Me</p>
                         <h2>Who is Despina Nnebo?</h2> 
-                        <p>
-                            I’m a creative UI/UX designer and front-end developer who loves turning ideas into real products. 
-                            I enjoy building designs that are simple, beautiful, and easy to use while ensuring every screen feels consistent and purposeful. 
-                            I’m passionate about solving problems through design and creating experiences people actually enjoy.
+                        <p className="reveal-text">
+                            {"I’m a creative UI/UX designer and front-end developer who loves turning ideas into real products. I enjoy building designs that are simple, beautiful, and easy to use while ensuring every screen feels consistent and purposeful. I’m passionate about solving problems through design and creating experiences people actually enjoy."
+                                .split(" ")
+                                .map((word, i) => (
+                                <span key={i} style={{ transitionDelay: `${i * 0.03}s` }}>
+                                    {word}&nbsp;
+                                </span>
+                                ))}
                         </p>
                     </div>
                     <Link to="contact"><button><p>Contact Me</p><div className='header-desc-svg'><FaArrowRight /></div></button></Link>
