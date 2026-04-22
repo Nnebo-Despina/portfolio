@@ -136,7 +136,17 @@
             "tags": ["Website", "Frontend Dev", "E-commerce"],
             "figmaLink": "",
             "behanceLink": "",
-            "websiteLink": "appppp"
+            "websiteLink": "pizza-square.vercel.app"
+        },
+        {
+            "id": 4,
+            "name": "Snowell Electric - Website for Buying Electric Appliances",
+            "image": "/projects/snowellElectric/Snowell.jpg",
+            "category": "web-dev",
+            "tags": ["Website", "Frontend Dev", "E-commerce"],
+            "figmaLink": "",
+            "behanceLink": "",
+            "websiteLink": "snowell-electric.vercel.app"
         }
 
     ],
