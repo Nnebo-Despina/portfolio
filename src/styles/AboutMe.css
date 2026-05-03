@@ -5,6 +5,7 @@
     color: var(--primaryColor);
     position: relative;
     display: flex;
+    background-color: white;
     justify-content: space-between;
 }
 .s1-about-header{

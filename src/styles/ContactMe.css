@@ -5,6 +5,8 @@
     color: var(--primaryColor);
     display: flex;
     justify-content: space-between;
+    background-color: white;
+
 }
 .s1-contact-dets{
     width: 35%;

@@ -5,6 +5,7 @@
     color: var(--primaryColor);
     display: flex;
     flex-direction: column;
+    background-color: white;
     align-items: center;
 }
 .s1-services-header{

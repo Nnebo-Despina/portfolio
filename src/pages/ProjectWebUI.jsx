@@ -8,7 +8,8 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 const ProjectWebUI = () => {
-        const data = database.projects;
+        const dataRev = database.projects;
+        const data = dataRev.reverse();
         let dataWebUI = data.filter(data => data.category == "web-ui")
         const navigate = useNavigate()
 

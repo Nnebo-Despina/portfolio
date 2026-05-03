@@ -8,7 +8,8 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 const ProjectUI = () => {
-    const data = database.projects;
+    const dataRev = database.projects;
+    const data = dataRev.reverse();
     let dataAppUI = data.filter(data => data.category == "mobile-ui")
     const navigate = useNavigate()
 
