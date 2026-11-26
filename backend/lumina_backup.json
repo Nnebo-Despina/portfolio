@@ -1,0 +1,484 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$ymLzSQtOfxVtRBBTfK3gj9$svDjV3BtrtRzXsQW9sxDWKMJStB1hl9JSFPg51r7vhU=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "Despina",
+    "first_name": "",
+    "last_name": "",
+    "email": "despinannebs22@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-11-25T23:40:08.548Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "330d50c51cebc0caceca764e59137dfb0d929ab7",
+  "fields": {
+    "user": [
+      "Despina"
+    ],
+    "created": "2026-11-25T23:40:30.516Z"
+  }
+},
+{
+  "model": "api.siteprofile",
+  "pk": 1,
+  "fields": {
+    "name": "Despina",
+    "full_name": "Nnebo Despina",
+    "role": "UI/UX Designer and Full Stack Developer",
+    "intro": "I turn ideas into clean, modern interfaces that feel smooth, intuitive and visually striking.",
+    "about": "I'm a full stack developer and UI/UX designer based in Enugu, Nigeria, and I love turning ideas into interfaces that look great and feel effortless to use. I design in Figma and bring those designs to life in React and Django, so clients get a smooth path from concept to working product. I can take a project from a first wireframe to a polished, responsive website or mobile app without the usual gaps between design and development.",
+    "email": "despinannebs22@gmail.com",
+    "phone": "+234 813 5744 702",
+    "whatsapp": "2348135744702",
+    "location": "Enugu, Nigeria",
+    "years_experience": "1+",
+    "clients_count": "2",
+    "satisfaction": "100%",
+    "available": true,
+    "availability_label": "Open to new projects"
+  }
+},
+{
+  "model": "api.project",
+  "pk": 1,
+  "fields": {
+    "order": 4,
+    "name": "TrustMed - Mobile App For Health Care",
+    "category": "mobile-ui",
+    "description": "",
+    "tags": [
+      "UI/UX",
+      "App Design",
+      "Health Care"
+    ],
+    "image": "",
+    "image_url": "/projects/trustmed.webp",
+    "color": "#DDF3EA",
+    "figma_link": "https://www.figma.com/proto/Piw3jVG2paalP73mVsX0L5/Team-C?page-id=0%3A1&node-id=63-567&p=f&viewport=649%2C145%2C0.02&t=86pAZsid15LleDws-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=445%3A1756&show-proto-sidebar=1",
+    "behance_link": "https://www.behance.net/gallery/235491973/TrustMed-Mobile-App-For-HealthCare",
+    "website_link": "",
+    "featured": true,
+    "published": true
+  }
+},
+{
+  "model": "api.project",
+  "pk": 2,
+  "fields": {
+    "order": 5,
+    "name": "Secure Homes - Web App For Purchasing Properties",
+    "category": "web-ui",
+    "description": "",
+    "tags": [
+      "UI/UX",
+      "Website Design",
+      "E-commerce"
+    ],
+    "image": "",
+    "image_url": "/projects/secure-homes.webp",
+    "color": "#E3E8FF",
+    "figma_link": "https://www.figma.com/proto/1smtbMcS45xRCv57y1pHba/Secure-Homes?node-id=1-2&p=f&viewport=446%2C187%2C0.02&t=r91ewc51scxlKmNm-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1&page-id=0%3A1",
+    "behance_link": "",
+    "website_link": "",
+    "featured": true,
+    "published": true
+  }
+},
+{
+  "model": "api.project",
+  "pk": 3,
+  "fields": {
+    "order": 6,
+    "name": "Pizza Square - Website for Purchasing Pizza",
+    "category": "web-dev",
+    "description": "",
+    "tags": [
+      "Website",
+      "Frontend Dev",
+      "E-commerce"
+    ],
+    "image": "",
+    "image_url": "/projects/pizza-square.webp",
+    "color": "#FFE3D6",
+    "figma_link": "",
+    "behance_link": "",
+    "website_link": "https://pizza-square-web.vercel.app",
+    "featured": true,
+    "published": true
+  }
+},
+{
+  "model": "api.project",
+  "pk": 4,
+  "fields": {
+    "order": 7,
+    "name": "Snowell Electric - Website for Buying Electric Appliances",
+    "category": "web-dev",
+    "description": "",
+    "tags": [
+      "Website",
+      "Frontend Dev",
+      "E-commerce"
+    ],
+    "image": "",
+    "image_url": "/projects/snowell.webp",
+    "color": "#E9F1FF",
+    "figma_link": "",
+    "behance_link": "",
+    "website_link": "https://snowell-electric.vercel.app",
+    "featured": false,
+    "published": true
+  }
+},
+{
+  "model": "api.project",
+  "pk": 5,
+  "fields": {
+    "order": 2,
+    "name": "Smartte's Portfolio - Game Developer Theme",
+    "category": "web-dev",
+    "description": "",
+    "tags": [
+      "Web Dev",
+      "Gaming",
+      "Portfolio"
+    ],
+    "image": "projects/Screenshot_2026-11-26_230223.jpg",
+    "image_url": "",
+    "color": "#E7E4FF",
+    "figma_link": "",
+    "behance_link": "",
+    "website_link": "https://gaming-portfolio56.vercel.app/",
+    "featured": true,
+    "published": true
+  }
+},
+{
+  "model": "api.project",
+  "pk": 6,
+  "fields": {
+    "order": 1,
+    "name": "Lumina - Online Library For Book Lovers",
+    "category": "web-dev",
+    "description": "",
+    "tags": [
+      "Web Dev",
+      "Library",
+      "Reading"
+    ],
+    "image": "projects/Screenshot_2026-11-26_230811.jpg",
+    "image_url": "",
+    "color": "#f6ffc7",
+    "figma_link": "",
+    "behance_link": "",
+    "website_link": "https://lumina-library65.vercel.app/",
+    "featured": true,
+    "published": true
+  }
+},
+{
+  "model": "api.project",
+  "pk": 7,
+  "fields": {
+    "order": 0,
+    "name": "White Leaf Hotel - Find Your Best Stay",
+    "category": "web-dev",
+    "description": "",
+    "tags": [
+      "Web Dev",
+      "Hotel",
+      "Booking",
+      "Accomodations"
+    ],
+    "image": "projects/Screenshot_2026-11-26_232911.jpg",
+    "image_url": "",
+    "color": "#ffece5",
+    "figma_link": "",
+    "behance_link": "",
+    "website_link": "https://www.whiteleafhotel.com/",
+    "featured": true,
+    "published": true
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "question": "What services do you offer?",
+    "answer": "I design and develop modern websites and mobile interfaces, focusing on clean UI, smooth user experience, and responsive frontend development."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "question": "How much do your services cost?",
+    "answer": "My pricing ranges from $10 to $3000 depending on project size, complexity, and estimated delivery timeline."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "question": "Do you build full websites or only design?",
+    "answer": "I can both design interfaces and develop frontend websites, depending on what the project requires."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "question": "How long does a project take?",
+    "answer": "Delivery time depends on the scope of the project, but most projects typically take anywhere from a few days to a few weeks."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "question": "What tools do you use for your work?",
+    "answer": "I mainly use Figma for design and React, HTML, CSS, and JavaScript for frontend development."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "question": "Can you redesign an existing website?",
+    "answer": "Yes, I can improve or completely redesign existing websites to make them more modern, responsive, and user-friendly."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 7,
+  "fields": {
+    "order": 7,
+    "question": "Do you work with clients internationally?",
+    "answer": "Yes, I work with clients from different countries and communicate remotely throughout the entire project process."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 8,
+  "fields": {
+    "order": 8,
+    "question": "What do you need to start a project?",
+    "answer": "I usually need a clear idea of the project, any references or inspirations, and your required features or goals."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 9,
+  "fields": {
+    "order": 9,
+    "question": "Can you maintain or update my website?",
+    "answer": "Yes, I can help with ongoing maintenance, updates, and improvements after the initial project is completed."
+  }
+},
+{
+  "model": "api.faq",
+  "pk": 10,
+  "fields": {
+    "order": 10,
+    "question": "How do we communicate during a project?",
+    "answer": "We can communicate through email, WhatsApp, or any preferred platform to ensure smooth updates and feedback."
+  }
+},
+{
+  "model": "api.sociallink",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "platform": "behance",
+    "label": "despinannebs22",
+    "url": "https://behance.net/despinannebs22"
+  }
+},
+{
+  "model": "api.sociallink",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "platform": "x",
+    "label": "callmedespinaur",
+    "url": "https://x.com/callmedespinaur"
+  }
+},
+{
+  "model": "api.sociallink",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "platform": "instagram",
+    "label": "despinaurr",
+    "url": "https://instagram.com/despinaurr"
+  }
+},
+{
+  "model": "api.sociallink",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "platform": "tiktok",
+    "label": "despinaurr",
+    "url": "https://tiktok.com/despinaurr"
+  }
+},
+{
+  "model": "api.experience",
+  "pk": 1,
+  "fields": {
+    "order": 2,
+    "title": "Website Development & Deployment ~ White Leaf Hotel",
+    "period": "2026",
+    "description": "Designed, developed, and deployed a fully responsive website for\nWhite Leaf Hotel & Suites (Enugu), translating brand requirements\ninto a clean, user-friendly web experience. Handled end-to-end\ndelivery from design to live deployment."
+  }
+},
+{
+  "model": "api.experience",
+  "pk": 2,
+  "fields": {
+    "order": 3,
+    "title": "TechWiz 7 Program ~ Aptech",
+    "period": "2026",
+    "description": "Took part in TechWiz, an intensive 5-day coding programme at\nAptech, collaborating with a team to design and build a full-stack\nweb app for online communities. Gained hands-on experience\nworking under real project conditions within a tight deadline."
+  }
+},
+{
+  "model": "api.experience",
+  "pk": 3,
+  "fields": {
+    "order": 4,
+    "title": "Website UI/UX Designer ~ Campus Connect",
+    "period": "2025",
+    "description": "Designed the complete UI/UX for Campus Connect, a school platform for a startup company, delivering end-to-end design work in Figma."
+  }
+},
+{
+  "model": "api.experience",
+  "pk": 4,
+  "fields": {
+    "order": 0,
+    "title": "Digital Presence Manager ~ White Leaf Hotel",
+    "period": "2026",
+    "description": "Managed and optimised the Google Business Profile for White Leaf Hotel & Suites (Enugu), ensuring accurate business information, visibility in local search results, and an engaging online presence to drive bookings and enquiries."
+  }
+},
+{
+  "model": "api.education",
+  "pk": 3,
+  "fields": {
+    "order": 6,
+    "title": "UI/UX Design ~ Aptech Computer Education",
+    "period": "2025",
+    "description": "Studied core principles of UI/UX design, gaining practical skills in building responsive, user-friendly digital products."
+  }
+},
+{
+  "model": "api.education",
+  "pk": 4,
+  "fields": {
+    "order": 2,
+    "title": "Website Front End Developer ~ Aptech Computer Education",
+    "period": "2025",
+    "description": "Studied core principles of frontend development, gaining practical skills in building responsive, user-friendly digital products."
+  }
+},
+{
+  "model": "api.education",
+  "pk": 5,
+  "fields": {
+    "order": 1,
+    "title": "Website Back End Developer ~ Aptech Computer Education",
+    "period": "2026",
+    "description": "Studied core principles of backend development, gaining practical skills in building responsive, user-friendly digital products."
+  }
+},
+{
+  "model": "api.education",
+  "pk": 6,
+  "fields": {
+    "order": 0,
+    "title": "App Front End Developer ~ Aptech Computer Education",
+    "period": "2026",
+    "description": "Studied core principles of app development, gaining practical skills in building responsive, user-friendly digital products."
+  }
+},
+{
+  "model": "api.review",
+  "pk": 1,
+  "fields": {
+    "order": 0,
+    "name": "Mr. Obiora",
+    "position": "CEO",
+    "company": "White Leaf",
+    "review": "The girl did a very good job. Very polite, I would hire her again",
+    "rating": 5,
+    "avatar": "reviews/WhatsApp_Image_2026-10-22_at_13.30.40_1.webp",
+    "avatar_url": "",
+    "published": true
+  }
+},
+{
+  "model": "api.tool",
+  "pk": 1,
+  "fields": {
+    "order": 1,
+    "name": "VS Code",
+    "level": 97,
+    "icon": "",
+    "icon_url": "/img/vscode.webp"
+  }
+},
+{
+  "model": "api.tool",
+  "pk": 2,
+  "fields": {
+    "order": 2,
+    "name": "Figma",
+    "level": 90,
+    "icon": "",
+    "icon_url": "/img/figma.webp"
+  }
+},
+{
+  "model": "api.tool",
+  "pk": 3,
+  "fields": {
+    "order": 3,
+    "name": "Sketch",
+    "level": 40,
+    "icon": "",
+    "icon_url": "/img/sketch.webp"
+  }
+},
+{
+  "model": "api.message",
+  "pk": 1,
+  "fields": {
+    "name": "Ada",
+    "email": "despinannebs22@gmail.com",
+    "phone": "+234 813 5744 702",
+    "interest": "Website Development",
+    "budget": "$501 - $1000",
+    "country": "Austria",
+    "details": "I need an ecommerce website",
+    "is_read": true,
+    "created_at": "2026-11-26T20:35:23.912Z"
+  }
+}
+]
