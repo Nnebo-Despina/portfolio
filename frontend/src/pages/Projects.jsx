@@ -20,7 +20,7 @@ export default function Projects() {
         <div className="wrap">
           <div className="page-head">
             <h1>Selected work</h1>
-            <p className="lede">Mobile interfaces, website designs and front end builds. Each one starts from a real user need.</p>
+            <p className="lede">Mobile interfaces, website designs and full stack builds. Each one starts from a real user need.</p>
           </div>
           <div className="filters" role="tablist" aria-label="Filter projects">
             <button className={active === 'all' ? 'on' : ''} onClick={() => navigate('/projects')}>All <small>{projects.length}</small></button>

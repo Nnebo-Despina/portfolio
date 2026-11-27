@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 export function useTitle(title) {
   useEffect(() => {
-    document.title = title ? `${title} | Despina Nnebo` : 'Despina Nnebo | UI/UX Designer & Front End Developer'
+    document.title = title ? `${title} | Despina Nnebo` : 'Despina Nnebo | UI/UX Designer & Full Stack Developer'
   }, [title])
 }
 

@@ -93,7 +93,7 @@ function Work() {
     <section className="panel dark showcase" id="work">
       <div className="wrap showcase-head">
         <h2>Selected work, designed and built with care</h2>
-        <p className="lede">Mobile apps, website designs and front end builds. Drag, swipe or use the arrows.</p>
+        <p className="lede">Mobile apps, website designs and full stack builds. Drag, swipe or use the arrows.</p>
       </div>
       <Showcase projects={list} />
       <div className="showcase-foot">
